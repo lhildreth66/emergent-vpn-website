@@ -1,0 +1,106 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) mixed with Tactical Minimalism",
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "IBM Plex Sans",
+    "mono_font": "JetBrains Mono",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter font-black",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed text-zinc-400",
+      "labels": "text-xs font-mono uppercase tracking-[0.2em] text-cyan-400"
+    }
+  },
+  "colors": {
+    "background_primary": "#0A0A0A",
+    "background_secondary": "#121212",
+    "surface": "#1A1A1A",
+    "brand_accent": "#00E5FF",
+    "brand_accent_hover": "#00B8CC",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A1A1AA",
+    "danger": "#EF4444",
+    "border_color": "rgba(255, 255, 255, 0.1)"
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-4, p-8, p-12, p-24, p-32",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "grid_strategy": "Mode A: Tetris Grid (Asymmetrical Bento) for Features",
+    "border_radius": "rounded-none or rounded-sm maximum (sharp tactical edges)"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-cyan-500 hover:bg-cyan-400 text-black font-bold uppercase tracking-wide rounded-sm px-8 py-4 transition-all",
+      "secondary": "border border-zinc-700 hover:border-cyan-500 text-white bg-transparent rounded-sm px-8 py-4 transition-all"
+    },
+    "cards": {
+      "style": "bg-[#121212] border border-white/10 hover:border-cyan-500/50 transition-colors p-8 relative overflow-hidden"
+    },
+    "shadcn_components": [
+      "accordion"
+    ]
+  },
+  "visual_enhancers": {
+    "surfaces": "Grid Borders (Technical Look): exposed skeleton grids for the features section.",
+    "effects": "Subtle cyan drop-shadows on key CTAs, grain texture overlay.",
+    "icons": "Phosphor Icons (@phosphor-icons/react) for tech-forward, crisp iconography."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1750969185331-e03829f72c7d",
+        "category": "Hero Background",
+        "description": "Abstract blue lines and dots on black background to represent WireGuard and secure network. Needs heavy opacity overlay (bg-black/80) to ensure text contrast."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1763771787035-99c6c28ec78e",
+        "category": "Features Background",
+        "description": "Rows of metal bars illuminated with blue light. Represents Fast VPN Servers."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82",
+        "category": "About / Privacy Visual",
+        "description": "Security and privacy dashboard status. Use as an accent image in the About or How it Works section."
+      }
+    ],
+    "logo_instructions": "Generate a clean text-based EV / shield mark in cyan (#00E5FF) using HTML/SVG icons (e.g., Phosphor Shield Check). Do not use raster images."
+  },
+  "pages_and_structure": {
+    "Home": {
+      "sections": [
+        "Header (Sticky, glassmorphism backdrop-blur-xl bg-[#0A0A0A]/80, EV Logo, Links)",
+        "Hero (Headline: 'Private, Secure VPN Protection', Sub: 'Powered by WireGuard', CTAs: Google Play & Privacy Policy, Background image with heavy overlay)",
+        "Features (Bento grid: One-Tap Protection, WireGuard Tech, Fast Servers, No Ads, Secure Public Wi-Fi, Privacy Focused)",
+        "How It Works (4 steps vertical or horizontal grid)",
+        "About (Company mission, privacy-first commitment)",
+        "FAQ (Shadcn Accordion)",
+        "Support (Email CTA block)",
+        "Footer (Links, Copyright, Data Deletion link)"
+      ]
+    },
+    "PrivacyPolicy": {
+      "layout": "Prose-heavy, narrow container (max-w-3xl) centered. High legibility, left-aligned, muted text."
+    },
+    "AccountDeletion": {
+      "layout": "Simple card interface for instructions on how to request account deletion."
+    }
+  },
+  "testing": {
+    "requirements": "All interactive elements must have a data-testid attribute in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Use Vite with React and Tailwind CSS.",
+    "Install Google Fonts 'Outfit', 'IBM Plex Sans', and 'JetBrains Mono' in index.html.",
+    "Install @phosphor-icons/react for icons.",
+    "Implement Shadcn Accordion for the FAQ section.",
+    "Ensure the Hero image uses a gradient overlay or bg-black/80 to maintain WCAG contrast for the text.",
+    "Do NOT use pure #000000; use #0A0A0A (Obsidian).",
+    "Use the cyan accent (#00E5FF) sparingly for primary buttons, active states, and 1px highlights.",
+    "Use a Bento grid for the features section, ensuring items aren't perfectly symmetrical (Mode A: Tetris Grid).",
+    "Add 'data-testid' to all buttons, links, and accordion triggers.",
+    "Build the EV shield logo purely out of an SVG icon (e.g. ShieldCheck) + text."
+  ]
+}
