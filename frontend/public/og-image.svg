@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="20%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0a3a44"/>
+      <stop offset="60%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="rgba(0,229,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <g transform="translate(80,180)">
+    <path d="M40 0 L120 32 V92 C120 138 86 172 60 184 C34 172 0 138 0 92 V32 Z"
+          fill="none" stroke="#00E5FF" stroke-width="4" stroke-linejoin="round"/>
+    <text x="60" y="118" text-anchor="middle" font-family="Outfit, Inter, sans-serif"
+          font-size="52" font-weight="900" fill="#00E5FF">EV</text>
+  </g>
+  <text x="240" y="240" font-family="Outfit, Inter, sans-serif" font-size="28"
+        font-weight="600" letter-spacing="6" fill="#00E5FF">EMERGENT VPN</text>
+  <text x="240" y="340" font-family="Outfit, Inter, sans-serif" font-size="82"
+        font-weight="900" fill="#FFFFFF" letter-spacing="-2">Private. Secure.</text>
+  <text x="240" y="430" font-family="Outfit, Inter, sans-serif" font-size="82"
+        font-weight="900" fill="#FFFFFF" letter-spacing="-2">Internet Access.</text>
+  <text x="240" y="500" font-family="IBM Plex Sans, sans-serif" font-size="28"
+        fill="#A1A1AA">Powered by WireGuard</text>
+</svg>

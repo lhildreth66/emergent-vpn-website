@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0A0A0A"/>
+  <path d="M32 8 L52 16 V32 C52 44 43 53 32 56 C21 53 12 44 12 32 V16 Z"
+        fill="none" stroke="#00E5FF" stroke-width="3" stroke-linejoin="round"/>
+  <text x="32" y="40" text-anchor="middle"
+        font-family="Outfit, Inter, system-ui, sans-serif"
+        font-size="20" font-weight="900" fill="#00E5FF" letter-spacing="-0.5">EV</text>
+</svg>
