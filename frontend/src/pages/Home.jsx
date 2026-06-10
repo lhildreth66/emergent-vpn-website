@@ -242,7 +242,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-px overflow-hidden border border-white/10 bg-white/10 md:grid-cols-3">
-            {FEATURES.map(({ icon: Icon, title, body, span }) => (
+            {FEATURES.map(({ icon: Icon, title, body, span }, idx) => (
               <div
                 key={title}
                 data-testid={`feature-${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
@@ -259,7 +259,7 @@ export default function Home() {
                   {body}
                 </p>
                 <span className="absolute right-6 top-6 font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-700">
-                  /{String(FEATURES.indexOf(FEATURES.find(f => f.title === title)) + 1).padStart(2, "0")}
+                  /{String(idx + 1).padStart(2, "0")}
                 </span>
               </div>
             ))}
