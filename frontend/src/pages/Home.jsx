@@ -92,7 +92,7 @@ const FAQS = [
   },
   {
     q: "How do I delete my account?",
-    a: "Email emergentvpn@gmail.com with the subject 'Account Deletion Request'. See the Data Deletion page for full instructions.",
+    a: "Email support@emergentvpn.com with the subject 'Account Deletion Request'. See the Data Deletion page for full instructions.",
   },
 ];
 

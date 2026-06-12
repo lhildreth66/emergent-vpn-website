@@ -71,10 +71,10 @@ export default function Footer() {
               <li>
                 <a
                   data-testid="footer-email"
-                  href="mailto:emergentvpn@gmail.com"
+                  href="mailto:support@emergentvpn.com"
                   className="text-zinc-400 transition-colors hover:text-cyan-400"
                 >
-                  emergentvpn@gmail.com
+                  support@emergentvpn.com
                 </a>
               </li>
             </ul>
