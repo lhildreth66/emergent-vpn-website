@@ -184,33 +184,25 @@ export default function Home() {
             </dl>
           </div>
 
-          {/* Decorative HUD card */}
+          {/* Trust card */}
           <div className="hidden md:col-span-4 md:block">
             <div className="relative h-full">
               <div className="absolute -inset-1 -z-10 bg-cyan-500/10 blur-2xl" />
-              <div className="flex h-full flex-col justify-between border border-white/10 bg-[#0F0F0F]/80 p-6 backdrop-blur-sm">
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="tac-label">tunnel.status</span>
-                    <span className="font-mono text-xs text-cyan-400">●  ACTIVE</span>
+              <div className="flex h-full flex-col gap-4 border border-white/10 bg-[#0F0F0F]/80 p-6 backdrop-blur-sm">
+                {[
+                  { icon: "🔒", label: "Encrypted Connection", desc: "AES-256 encryption on every session" },
+                  { icon: "🚫", label: "No Activity Logs", desc: "We never record what you do online" },
+                  { icon: "📶", label: "Public Wi-Fi Protection", desc: "Stay safe on any network" },
+                  { icon: "⚡", label: "One-Tap Connect", desc: "Protected in seconds, no setup needed" },
+                ].map(({ icon, label, desc }) => (
+                  <div key={label} className="flex items-start gap-4 border border-white/5 bg-black/30 p-4">
+                    <span className="text-2xl leading-none">{icon}</span>
+                    <div>
+                      <div className="font-display text-sm font-bold text-white">{label}</div>
+                      <div className="mt-0.5 font-mono text-[11px] leading-snug text-zinc-500">{desc}</div>
+                    </div>
                   </div>
-                  <div className="mt-6 font-mono text-xs leading-relaxed text-zinc-400">
-                    <p>$ wg-quick up emergent</p>
-                    <p>[+] handshake complete</p>
-                    <p>[+] aes256-gcm . curve25519</p>
-                    <p>[+] endpoint: 10.0.0.1:51820</p>
-                    <p className="text-cyan-400">[+] tunnel armed</p>
-                  </div>
-                </div>
-                <div className="mt-8 border-t border-white/10 pt-4">
-                  <div className="flex justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500">
-                    <span>↓ 248 Mb/s</span>
-                    <span>↑ 92 Mb/s</span>
-                  </div>
-                  <div className="mt-2 h-1 w-full bg-white/5">
-                    <div className="h-full w-3/4 bg-cyan-400" />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
