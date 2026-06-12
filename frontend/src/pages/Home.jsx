@@ -307,6 +307,133 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PRICING */}
+      <section
+        id="pricing"
+        data-testid="pricing-section"
+        className="relative border-b border-white/5 py-24 md:py-32"
+      >
+        <div className="mx-auto max-w-7xl px-6 md:px-12">
+          <div className="mb-16 max-w-2xl">
+            <div className="tac-label mb-4">// PLANS</div>
+            <h2 className="font-display text-4xl font-black leading-tight tracking-tighter sm:text-5xl">
+              Start free. Stay protected.
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-zinc-400">
+              All plans include a{" "}
+              <span className="text-cyan-400 font-bold">7-day free trial</span>. Cancel
+              anytime through Google Play.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {/* Free Trial */}
+            <div
+              data-testid="plan-trial"
+              className="border border-white/10 bg-[#0F0F0F] p-8"
+            >
+              <div className="tac-label mb-4">Free Trial</div>
+              <div className="font-display text-4xl font-black">7 days</div>
+              <div className="mt-1 font-mono text-xs uppercase tracking-[0.18em] text-zinc-500">
+                No charge
+              </div>
+              <ul className="mt-8 space-y-3 text-sm text-zinc-400">
+                {["Full VPN access", "WireGuard protocol", "No credit card required at start", "Auto-renews to monthly plan"].map((f) => (
+                  <li key={f} className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 flex-none bg-cyan-400" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.emergentvpn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex w-full items-center justify-center rounded-sm border border-zinc-700 px-6 py-3 font-mono text-xs font-bold uppercase tracking-[0.18em] text-white transition-colors hover:border-cyan-400 hover:text-cyan-300"
+              >
+                Start Free Trial
+              </a>
+            </div>
+
+            {/* Monthly */}
+            <div
+              data-testid="plan-monthly"
+              className="relative border border-cyan-400/50 bg-[#0F0F0F] p-8"
+            >
+              <div className="absolute -top-3 left-8">
+                <span className="bg-cyan-400 px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-black">
+                  Most Popular
+                </span>
+              </div>
+              <div className="tac-label mb-4">Monthly</div>
+              <div className="font-display text-4xl font-black">
+                $4.99
+                <span className="font-mono text-base font-normal text-zinc-400">/mo</span>
+              </div>
+              <div className="mt-1 font-mono text-xs uppercase tracking-[0.18em] text-zinc-500">
+                Billed monthly
+              </div>
+              <ul className="mt-8 space-y-3 text-sm text-zinc-400">
+                {["Full VPN access", "WireGuard protocol", "All server locations", "Cancel anytime in Google Play"].map((f) => (
+                  <li key={f} className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 flex-none bg-cyan-400" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.emergentvpn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex w-full items-center justify-center rounded-sm bg-cyan-400 px-6 py-3 font-mono text-xs font-bold uppercase tracking-[0.18em] text-black transition-colors hover:bg-cyan-300"
+              >
+                Get Monthly
+              </a>
+            </div>
+
+            {/* Annual */}
+            <div
+              data-testid="plan-annual"
+              className="relative border border-white/10 bg-[#0F0F0F] p-8"
+            >
+              <div className="absolute -top-3 left-8">
+                <span className="bg-zinc-700 px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-zinc-300">
+                  Best Value
+                </span>
+              </div>
+              <div className="tac-label mb-4">Annual</div>
+              <div className="font-display text-4xl font-black">
+                $39.99
+                <span className="font-mono text-base font-normal text-zinc-400">/yr</span>
+              </div>
+              <div className="mt-1 font-mono text-xs uppercase tracking-[0.18em] text-zinc-500">
+                Save ~33% vs monthly
+              </div>
+              <ul className="mt-8 space-y-3 text-sm text-zinc-400">
+                {["Full VPN access", "WireGuard protocol", "All server locations", "Cancel anytime in Google Play"].map((f) => (
+                  <li key={f} className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 flex-none bg-cyan-400" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.emergentvpn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex w-full items-center justify-center rounded-sm border border-zinc-700 px-6 py-3 font-mono text-xs font-bold uppercase tracking-[0.18em] text-white transition-colors hover:border-cyan-400 hover:text-cyan-300"
+              >
+                Get Annual
+              </a>
+            </div>
+          </div>
+
+          <p className="mt-8 text-center font-mono text-xs uppercase tracking-[0.18em] text-zinc-600">
+            Subscriptions managed through Google Play · Prices in USD · Taxes may apply
+          </p>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section
         id="about"
