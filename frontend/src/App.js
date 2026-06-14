@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "@/pages/Home";
 import Privacy from "@/pages/Privacy";
 import DeleteAccount from "@/pages/DeleteAccount";
+import Support from "@/pages/Support";
 import ScrollToTop from "@/components/ScrollToTop";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/delete-account" element={<DeleteAccount />} />
+          <Route path="/support" element={<Support />} />
         </Routes>
       </BrowserRouter>
     </div>

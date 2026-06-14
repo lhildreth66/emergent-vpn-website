@@ -61,6 +61,15 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  data-testid="footer-support"
+                  to="/support"
+                  className="text-zinc-400 transition-colors hover:text-cyan-400"
+                >
+                  Support
+                </Link>
+              </li>
+              <li>
+                <Link
                   data-testid="footer-delete"
                   to="/delete-account"
                   className="text-zinc-400 transition-colors hover:text-cyan-400"

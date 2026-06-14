@@ -39,6 +39,13 @@ export default function Header() {
           >
             Privacy
           </Link>
+          <Link
+            data-testid="nav-support"
+            to="/support"
+            className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-400 transition-colors hover:text-cyan-400"
+          >
+            Support
+          </Link>
         </nav>
         <a
           data-testid="header-download-btn"
