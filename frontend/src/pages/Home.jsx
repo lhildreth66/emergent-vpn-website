@@ -209,6 +209,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* VIDEO */}
+      <section
+        id="video"
+        data-testid="video-section"
+        className="relative border-b border-white/5 py-16 md:py-24"
+      >
+        <div className="mx-auto max-w-7xl px-6 md:px-12">
+          <div className="mb-10 max-w-2xl">
+            <div className="tac-label mb-4">// DEMO</div>
+            <h2 className="font-display text-4xl font-black leading-tight tracking-tighter sm:text-5xl">
+              See Emergent VPN in Action
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-zinc-400">
+              Watch a quick overview of how Emergent VPN helps protect your privacy online.
+            </p>
+          </div>
+          <div className="mx-auto" style={{ maxWidth: "900px" }}>
+            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+              <iframe
+                src="https://www.youtube.com/embed/lb86aNV2TKA"
+                title="Emergent VPN — Product Overview"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full border border-white/10"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURES — Bento */}
       <section
         id="features"
@@ -474,36 +504,6 @@ export default function Home() {
                   <div className="mt-1 font-display font-bold">Disabled</div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VIDEO */}
-      <section
-        id="video"
-        data-testid="video-section"
-        className="relative border-b border-white/5 py-24 md:py-32"
-      >
-        <div className="mx-auto max-w-7xl px-6 md:px-12">
-          <div className="mb-10 max-w-2xl">
-            <div className="tac-label mb-4">// DEMO</div>
-            <h2 className="font-display text-4xl font-black leading-tight tracking-tighter sm:text-5xl">
-              See Emergent VPN in Action
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-zinc-400">
-              Watch a quick overview of how Emergent VPN helps protect your privacy online.
-            </p>
-          </div>
-          <div className="mx-auto" style={{ maxWidth: "900px" }}>
-            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-              <iframe
-                src="https://www.youtube.com/embed/lb86aNV2TKA"
-                title="Emergent VPN — Product Overview"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 h-full w-full border border-white/10"
-              />
             </div>
           </div>
         </div>
